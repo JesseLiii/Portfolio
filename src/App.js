@@ -20,58 +20,58 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <div className="logo">
+        {/* <header> */}
+        {/* <div className="logo">
             <img src={require('./img/devjane.png')} alt="why"></img>
-          </div>
-          <button
-            className="nav-toggle"
-            are-label="toggle navigation"
-            onClick={this.handleNavToggle}
-          >
-            <span className="hamburger"></span>
-          </button>
-          <nav className="nav">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a
-                  href="#home"
-                  className="nav__link"
-                  onClick={this.handleNavToggle}
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#about"
-                  className="nav__link"
-                  onClick={this.handleNavToggle}
-                >
-                  About Me
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#cswork"
-                  className="nav__link"
-                  onClick={this.handleNavToggle}
-                >
-                  CS Work
-                </a>
-              </li>
-              <li className="nav__item">
-                <a
-                  href="#otherwork"
-                  className="nav__link"
-                  onClick={this.handleNavToggle}
-                >
-                  Other Work
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+          </div> */}
+        <button
+          className="nav-toggle"
+          are-label="toggle navigation"
+          onClick={this.handleNavToggle}
+        >
+          <span className="hamburger"></span>
+        </button>
+        <nav className="nav">
+          <ul className="nav__list">
+            <li className="nav__item">
+              <a
+                href="#home"
+                className="nav__link"
+                onClick={this.handleNavToggle}
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#about"
+                className="nav__link"
+                onClick={this.handleNavToggle}
+              >
+                About Me
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#cswork"
+                className="nav__link"
+                onClick={this.handleNavToggle}
+              >
+                CS Work
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                href="#otherwork"
+                className="nav__link"
+                onClick={this.handleNavToggle}
+              >
+                Other Work
+              </a>
+            </li>
+          </ul>
+        </nav>
+        {/* </header> */}
 
         {/* Introduction */}
 
@@ -111,6 +111,23 @@ class App extends Component {
           </Col>
           <Col xs={12}>
             <section className="intro-2">
+              <ul className="intro-nav">
+                <il>
+                  <a href="#about" className="intro-nav-link">
+                    About Me
+                  </a>
+                </il>
+                <il>
+                  <a href="#about" className="intro-nav-link">
+                    Hiring Me?
+                  </a>
+                </il>
+                <il>
+                  <a href="#home" className="intro-nav-link">
+                    Portfolio
+                  </a>
+                </il>
+              </ul>
               <img src="me.png" className="intro-img"></img>
             </section>
           </Col>
@@ -131,7 +148,76 @@ class App extends Component {
         </section> */}
 
         {/* Who I am */}
+
         <section className="about-me" id="about">
+          <Row>
+            <Col span={24} className="about-me-col-side">
+              <h2 className="about-me-title-side">WHAT DEFINES ME?</h2>
+            </Col>
+            <Col span={24} className="about-me-col">
+              <h2 className="about-me-title">
+                PRODUCTIVITY ={' '}
+                <p className="about-me-title-highlight">EFFICIENCY</p> X TIME
+              </h2>
+              <div style={{ display: 'block' }}></div>
+              <p className="about-me-p">
+                A big believer in working <strong>smarter </strong>{' '}
+                <em>and </em>
+                <strong> harder</strong>. Effeciency and efficacy of my work is
+                much more important to me than the raw time I work. I am
+                constantly improving myself, taking care to be healthy
+                physiologically and psychologically to enable myself to do what
+                I love as best as I can.
+              </p>
+            </Col>
+            <Col span={24} className="about-me-col">
+              <h2 className="about-me-title">VORACIOUS LEARNER</h2>
+              <div style={{ display: 'block' }}></div>
+              <p className="about-me-p">
+                That efficiency does more than make me more effective. In
+                combination with my willigness and love for learning new
+                knowledge and skills, my efficiency means that I can learn new
+                things both effectively and fast, for any situation.
+              </p>
+            </Col>
+            <Col span={24} className="about-me-col">
+              <h2 className="about-me-title">THE RIGHT TYPE OF SMART?</h2>
+              <div style={{ display: 'block' }}></div>
+              <p className="about-me-p">
+                Look, I'm smart. But I'm also surrounded by incredibly
+                intelligent people. So why me? The question you should be asking
+                isn't whether I'm smart, but whether my type of intelligence
+                fits what you need. I'll be honest. I probably won't be
+                developing the next groundbreaking theoritcal algorithm. I am
+                quick, adaptable, and enjoy thinking about all facets of a
+                problem, so asking me to solve problems that don't need that is
+                a waste of my talents and your time. My intelligence is general
+                - I'm good at applying strong logic and creative solutions when
+                I know the goal or have a direction. I'm especially good at
+                developing and thinking under constraints.
+              </p>
+            </Col>
+            <Col span={24}>
+              <div className="service-buttons">
+                <a href="#cswork" className="btn">
+                  My Work
+                </a>
+                <a
+                  href={require('./components/JesseLiResume.pdf')}
+                  className="btn"
+                  download
+                >
+                  Download Resume
+                </a>
+                <a href="#footer" className="btn">
+                  Contact Me
+                </a>
+              </div>
+            </Col>
+          </Row>
+        </section>
+
+        {/* <section className="about-me">
           <h2 className="section__title section__title--about">Who I am</h2>
           <p className="section__subtitle section__subtitle--about">
             CS Student, Ambitious & Effecient Worker
@@ -141,10 +227,9 @@ class App extends Component {
             <p>
               Currently attending Georgia Institute of Technology, a top #10
               ranked Computer Science school in the US as an International
-              Undergraduate Student.
-              {/* Chosen specialisations in my major are
+              Undergraduate Student. Chosen specialisations in my major are
               Artificial Intelligence and "People", focused on software that
-              directly interacts with people. */}
+              directly interacts with people.
             </p>
             <p>
               However, I am more than just hardworking. A big believer in
@@ -176,9 +261,9 @@ class App extends Component {
             alt="Jane leaning against a bus"
             className="about-me__img"
           ></img>
-        </section>
+        </section> */}
 
-        <section className="redirect">
+        {/* <section className="redirect">
           <h2>Interested?</h2>
           <div className="service-buttons">
             <a href="#cswork" className="btn">
@@ -195,7 +280,7 @@ class App extends Component {
               Contact Me
             </a>
           </div>
-        </section>
+        </section> */}
 
         {/* <!-- My services --> */}
         <section className="my-services" id="services">
