@@ -197,90 +197,137 @@ class App extends Component {
                 developing and thinking under constraints.
               </p>
             </Col>
-            <Col span={24}>
-              <div className="service-buttons">
-                <a href="#cswork" className="btn">
-                  My Work
-                </a>
-                <a
-                  href={require('./components/JesseLiResume.pdf')}
-                  className="btn"
-                  download
-                >
-                  Download Resume
-                </a>
-                <a href="#footer" className="btn">
-                  Contact Me
-                </a>
-              </div>
-            </Col>
           </Row>
         </section>
 
-        {/* <section className="about-me">
-          <h2 className="section__title section__title--about">Who I am</h2>
-          <p className="section__subtitle section__subtitle--about">
-            CS Student, Ambitious & Effecient Worker
+        {/* Hiring me? */}
+        <section className="hiring-me" id="hiring">
+          <h2 className="about-me-title hiring-me-title">HIRING ME?</h2>
+          <p className="about-me-p hiring-me-p">
+            Let's not be redundant, skim my resume first :)
           </p>
-
-          <div className="about-me__body">
-            <p>
-              Currently attending Georgia Institute of Technology, a top #10
-              ranked Computer Science school in the US as an International
-              Undergraduate Student. Chosen specialisations in my major are
-              Artificial Intelligence and "People", focused on software that
-              directly interacts with people.
-            </p>
-            <p>
-              However, I am more than just hardworking. A big believer in
-              working <strong>smarter </strong> <em>and </em>
-              <strong> harder</strong>. Effeciency and efficacy of my work is
-              much more important to me than the raw time I work. I am
-              constantly improving myself, taking care to be healthy
-              physiologically and psychologically to enable myself to do what I
-              love as best as I can.
-            </p>
-            <p>
-              <strong>
-                {' '}
-                Productivity = Effeciency X Time, so why waste our most precious
-                resource of time?
-              </strong>
-            </p>
-            <p>
-              My passion & work extend from Computer Science. Areas include
-              Investment, being chosen as an analyst in the GT Investment
-              Committee, which manages over $1.5 in assets; Photography &
-              Youtube, where I capture and explore ideas important to me; And
-              writing a fantasy Novel which has passed over 800,000 words.
-            </p>
-          </div>
-
-          <img
-            src={require('./img/dev-jane-02.jpg')}
-            alt="Jane leaning against a bus"
-            className="about-me__img"
-          ></img>
-        </section> */}
-
-        {/* <section className="redirect">
-          <h2>Interested?</h2>
-          <div className="service-buttons">
-            <a href="#cswork" className="btn">
-              My Work
-            </a>
+          <div className="center">
             <a
               href={require('./components/JesseLiResume.pdf')}
               className="btn"
               download
             >
-              Download Resume
-            </a>
-            <a href="#footer" className="btn">
-              Contact Me
+              Resume
             </a>
           </div>
-        </section> */}
+          <img className="center" src="seperator.svg" width="5em"></img>
+          <Row justify="center" className="core-blocks">
+            <Col span={8}>
+              <div className="center">
+                <a href="#cswork" className="btn">
+                  Creativity
+                </a>
+              </div>
+            </Col>
+            <Col span={8}>
+              <div className="center">
+                <a href="#footer" className="btn">
+                  Organisations
+                </a>
+              </div>
+            </Col>
+            <Col span={8}>
+              <div className="center">
+                <a href="#footer" className="btn">
+                  CS
+                </a>
+              </div>
+            </Col>
+          </Row>
+          <Row justify="center" align="middle" className="core-blocks">
+            <Col sx={24} style={{ margin: '5vw 5vw 5vw 5vw' }}>
+              <h2 className="about-me-title hiring-me-title">ORGANISATIONS</h2>
+            </Col>
+            <a target="_blank" href="https://gtcssocialgood.com/">
+              <Col xs={24} className="cssocialgood project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  CS + SOCIAL GOOD
+                </h2>
+                <h3 className="center contact-h3 project">
+                  Contact : Mr. Březina +420 605 911 901
+                </h3>
+              </Col>
+            </a>
+            <a target="_blank" href="https://www.gtsfinvestments.com/overview">
+              <Col xs={24} className="ic project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  GTSF INVESTMENT COMMITTEE
+                </h2>
+                <h3 className="center contact-h3 project">
+                  $1.7 Million Student-Managed Philanthropic Endowment
+                </h3>
+              </Col>
+            </a>
+            <a target="_blank" href="https://gtia.gtorg.gatech.edu/">
+              <Col xs={24} className="gtia project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  GT INTERNATIONAL AMBASSADOR
+                </h2>
+                <h3 className="center contact-h3 project">
+                  Ambassador in the External Committee, focused on planning,
+                  managing, and executing large campus wide events
+                </h3>
+                <h3 className="center contact-h3 project">
+                  NEW WEBSITE COMING SOON! (Current Project)
+                </h3>
+              </Col>
+            </a>
+            <a target="_blank" href="https://gtia.gtorg.gatech.edu/">
+              <Col xs={24} className="gtia project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  TEDX, SPEECH &amp; DEBATE
+                </h2>
+                <h3 className="center contact-h3 project">
+                  Ambassador in the External Committee, focused on planning,
+                  managing, and executing large campus wide events
+                </h3>
+              </Col>
+            </a>
+          </Row>
+          <Row justify="center" align="middle" className="core-blocks">
+            <Col sx={24} style={{ margin: '5vw 5vw 5vw 5vw' }}>
+              <h2 className="about-me-title hiring-me-title project">
+                FREELANCE
+              </h2>
+            </Col>
+            <a target="_blank" href="https://www.dumpli.cz">
+              <Col xs={24} className="dumpli project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  DUMPLI.CZ
+                </h2>
+                <h3 className="center contact-h3 project">
+                  Freelance website for, built using HTML CSS Javascript,
+                  Boostrap &amp; Integration of online payment using Stripe API.
+                </h3>
+              </Col>
+            </a>
+            <a target="_blank" href="">
+              <Col xs={24} className="project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  PHAN GROUP
+                </h2>
+                <h3 className="center contact-h3 project">
+                  Technical advisor &amp; service Ing: +420 605 911 901
+                </h3>
+              </Col>
+            </a>
+            <a target="_blank" href="">
+              <Col xs={24} className="project-sub-section">
+                <h2 className="about-me-title hiring-me-title project">
+                  JJZ STROJE
+                </h2>
+                <h3 className="center contact-h3 project">
+                  Managing Director JJZ s.r.o. : +420 724 233 332
+                </h3>
+              </Col>
+            </a>
+          </Row>
+        </section>
 
         {/* <!-- My services --> */}
         <section className="my-services" id="services">
