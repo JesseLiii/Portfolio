@@ -388,8 +388,15 @@ header {
 
 .about-me {
   max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 0px;
+  padding: 5vw 5vw 5vw 5vw;
+
+  /* background-image: url(./img/miami1.jpg); */
+  background-image: url(./img/miami1.jpg),
+    linear-gradient(#000 0%, #f304ab 10%, #b6302b 80%, #000 100%);
+  /* background-color: #4b4b4b; */
+  background-blend-mode: multiply;
+  background-size: cover;
+  /* background-position: center bottom; */
 }
 
 .about-me-col {
@@ -410,8 +417,72 @@ header {
   display: inline;
 }
 
+@keyframes slideInRight {
+  from {
+    transform: translateX(-20vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .about-me-col-side {
   position: relative;
+  float: right;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  margin: 0;
+  letter-spacing: 0.18538em; /* Adjust as needed */
+  animation: typing 2s steps(20, end), typingStill 2s steps(20, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The anti-typing effect */
+@keyframes typing {
+  from {
+    width: 40%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+/* The anti-typing effect */
+@keyframes typingStill {
+  from {
+    top: 0.2em;
+    right: 2em;
+  }
+  to {
+    top: 6.8em;
+    right: -4.8em;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .about-me-title-side {
@@ -423,6 +494,7 @@ header {
   color: #fff;
   font-weight: 700;
   font-size: 2rem;
+  float: left;
   /* line-height: 49px; */
   letter-spacing: 0.18538em;
   display: inline;
@@ -567,7 +639,14 @@ header {
 
 /* Hiring me */
 .hiring-me {
-  background-color: var(--clr-dark);
+  /* background-color: var(--clr-dark); */
+
+  background-image: url(./img/cat.jpg),
+    linear-gradient(#000 0vw, #8a2521 7vw, #c28830 20vw, #000 50vw, #000 100vw);
+  /* background-color: #4b4b4b; */
+  background-blend-mode: multiply;
+  background-size: 100vw;
+
   padding-top: 5vh;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -694,8 +773,90 @@ header {
   opacity: 0.7;
 }
 
+.phan-group::before {
+  content: '';
+  background-image: url(./img/phan-group.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+}
+
+.creativity::before {
+  content: '';
+  background-image: url(./img/creativity.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.colours::before {
+  content: '';
+  background-image: url(./img/lisbonBanner.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
 .project {
   position: relative;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.show1 {
+  /* transform: translateX(20%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1); */
+  animation: 1s cubic-bezier(0.5, 0, 0.5, 1) 0s 1 slideInFromRight;
+}
+
+.show2 {
+  /* transform: translateX(20%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1); */
+  animation: 1s cubic-bezier(0.5, 0, 0.5, 1) 0s 1 slideInFromLeft;
+}
+
+.hide1,
+.hide2 {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.5, 0, 0.5, 1);
+
+  /* transform: translateX(50%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1); */
+}
+
+.show-btn {
+  color: var(--clr-accent);
+  border: 0.3em solid var(--clr-accent);
 }
 
 /* Other Work */
@@ -776,43 +937,4 @@ header {
   margin: 0 0.5em 0;
 }
 
-/* React Defaults */
-/* 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* Intro Animation */
