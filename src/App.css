@@ -184,8 +184,8 @@ header {
   background: transparent;
   cursor: pointer;
   position: fixed;
-  right: 1em;
-  top: 1em;
+  right: 5vw;
+  top: 5vh;
   z-index: 1000;
   border: 0;
 }
@@ -246,9 +246,28 @@ header {
   bottom: 6px;
 }
 
+.contact-link {
+  border: 7px solid #ffffff;
+  color: #000 !important;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.contact-link:hover {
+  /* color: var(--clr-accent) !important; */
+  background: var(--clr-accent);
+  border: 7px solid var(--clr-accent);
+}
+
 /*  Intro section  */
 
-/* Intro  */
+/* Introduction  */
+.intro-gradient {
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+  padding: 5vh 5vw 5vh 5vw;
+  height: 100vh;
+}
+
 .intro-1 {
   background-color: #d7d7d7;
   height: 100vh;
@@ -281,28 +300,47 @@ header {
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 80%;
+  width: 50%;
   justify-content: space-evenly;
   /* align-items: center; */
   margin-right: 5vw;
   padding: 0;
 }
+
 .intro-nav-link {
   color: inherit;
-  font-weight: var(--fw-bold);
+  /* font-weight: var(--fw-bold); */
+  font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
+  font-style: normal;
+  font-family: 'Montserrat';
 }
 
 .intro-nav-link:hover {
   color: var(--clr-accent);
 }
 
-.intro-img {
-  width: 50%;
+.intro-img-div {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 30vh;
+  right: 25vw;
+  display: flex;
+}
+
+.intro-img-div:hover .intro-img-1,
+.intro-img-div:hover .intro-img-2 {
+  transform: translateY(0);
+}
+
+.intro-img-1 {
+  transform: translateY(-10%);
+  transition: transform 0.3s ease-out;
+}
+
+.intro-img-2 {
+  transform: translateY(10%);
+  transition: transform 0.3s ease-out;
 }
 
 .intro-text {
@@ -312,8 +350,12 @@ header {
 
 .intro-h1 {
   color: #fff;
+  position: absolute;
+  bottom: 15vh;
+  left: 5vw;
   font-weight: bold;
-  margin-bottom: 0em;
+  font-size: 3em;
+  margin-bottom: 0.3em;
 }
 
 .intro-h3 {
@@ -323,8 +365,12 @@ header {
 }
 
 .intro-h4 {
-  color: #909090;
+  color: #fff;
   font-weight: bold;
+  font-size: 1em;
+  position: absolute;
+  bottom: 10vh;
+  left: 5vw;
 }
 
 .intro {
@@ -400,7 +446,7 @@ header {
   margin: 0;
   /* background-image: url(./img/miami1.jpg); */
   background-image: url(./img/miami1.jpg),
-    linear-gradient(#000 0%, #f304ab 10%, #b6302b 80%, #000 100%);
+    linear-gradient(rgba(43, 55, 96, 1) 0%, #f304ab 10%, #b6302b 80%, #000 100%);
   /* background-color: #4b4b4b; */
   background-blend-mode: multiply;
   background-size: cover;

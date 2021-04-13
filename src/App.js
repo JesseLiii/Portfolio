@@ -6,6 +6,9 @@ import './App.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
+import jerry1 from './img/jerry1.jpg';
+import jerry2 from './img/jerry2.jpg';
+
 function App() {
   const [data, setData] = useState(2);
   const [organisations, setOrganisations] = useState('show');
@@ -68,21 +71,9 @@ function App() {
       {/* </header> */}
 
       {/* Introduction */}
-
       <Row justify="center" align="middle">
-        <Col xs={12}>
-          <section className="intro-1">
-            <div className="intro-text">
-              <h3 className="intro-h3">Hi, Nice to meet you! I am</h3>
-              <h1 className="intro-h1">Jesse Li</h1>
-              <h4 className="intro-h4">
-                CS Student @ Georgia Tech &amp; Creator
-              </h4>
-            </div>
-          </section>
-        </Col>
-        <Col xs={12}>
-          <section className="intro-2">
+        <Col xs={24}>
+          <section className="intro-gradient">
             <ul className="intro-nav">
               <il>
                 <a href="#about" className="intro-nav-link">
@@ -95,12 +86,20 @@ function App() {
                 </a>
               </il>
               <il>
-                <a href="#hiring" className="intro-nav-link">
-                  Portfolio
+                <a href="#hiring" className="intro-nav-link contact-link">
+                  Contact Me
                 </a>
               </il>
             </ul>
-            <img src="me.png" className="intro-img"></img>
+            <h3 className="intro-h3">JL</h3>
+            <h1 className="intro-h1">Jesse Li</h1>
+            <h4 className="intro-h4">
+              Creator &amp; CS Student @ Georgia Tech
+            </h4>
+            <div className="intro-img-div">
+              <img className="intro-img-1" width="200" src={jerry1} />
+              <img className="intro-img-2" width="200" src={jerry2} />
+            </div>
           </section>
         </Col>
       </Row>
