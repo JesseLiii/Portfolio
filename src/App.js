@@ -74,6 +74,7 @@ function App() {
       <Row justify="center" align="middle">
         <Col xs={24}>
           <section className="intro-gradient">
+            {/* <div className="intro-gradient-background"></div> */}
             <ul className="intro-nav">
               <il>
                 <a href="#about" className="intro-nav-link">
@@ -125,7 +126,7 @@ function App() {
             animateIn="animate__fadeInLeft"
             animateOut="animate__fadeOutLeft"
           >
-            <Collapse defaultActiveKey={['7']} ghost>
+            <Collapse defaultActiveKey={['7']} ghost className="collapse">
               <Panel
                 header={
                   <h2 className="about-me-title">

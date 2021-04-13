@@ -268,6 +268,19 @@ header {
   height: 100vh;
 }
 
+.intro-gradient-background {
+  background-image: url(./img/creativity.jpg);
+  background-blend-mode: multiply;
+  background-color: rgb(88, 86, 86);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  content: '';
+  height: 100vh;
+  width: 100vw;
+}
+
 .intro-1 {
   background-color: #d7d7d7;
   height: 100vh;
@@ -454,7 +467,10 @@ header {
 }
 
 .ant-collapse-item {
-  margin: 2vh 0 2vw 0;
+  margin: 2vw 0 2vw 0;
+}
+
+.collapse {
 }
 
 .about-me-col {
