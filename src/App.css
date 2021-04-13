@@ -87,6 +87,14 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+.clr-accent-hoverable {
+  color: var(--clr-accent);
+}
+
+.clr-accent-hoverable:hover {
+  opacity: 0.7;
+}
+
 .section__title {
   margin-bottom: 0.25em;
 }
@@ -247,12 +255,13 @@ header {
 }
 
 .social-list__link {
-  color: var(--clr-dark);
+  color: var(--clr-accent);
   font-size: 2rem;
 }
 
 .social-list__link:hover {
-  color: var(--clr-dark);
+  color: var(--clr-accent);
+  opacity: 0.7;
   font-size: 2rem;
 }
 
@@ -387,9 +396,8 @@ header {
 /* About me */
 
 .about-me {
-  max-width: 1200px;
   padding: 5vw 5vw 5vw 5vw;
-
+  margin: 0;
   /* background-image: url(./img/miami1.jpg); */
   background-image: url(./img/miami1.jpg),
     linear-gradient(#000 0%, #f304ab 10%, #b6302b 80%, #000 100%);
@@ -397,6 +405,10 @@ header {
   background-blend-mode: multiply;
   background-size: cover;
   /* background-position: center bottom; */
+}
+
+.ant-collapse-item {
+  margin: 2vh 0 2vw 0;
 }
 
 .about-me-col {
@@ -411,10 +423,29 @@ header {
 .about-me-title {
   color: #fff;
   font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0.2em 0 0.2em 0;
+  /* line-height: 49px; */
+  letter-spacing: 0.15538em;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.ant-collapse-header:hover .about-me-title {
+  color: var(--clr-accent);
+}
+
+.about-me-title-highlight {
+  color: var(--clr-accent);
+  font-weight: 700;
   font-size: 2rem;
   /* line-height: 49px; */
   letter-spacing: 0.18538em;
   display: inline;
+}
+
+.ant-collapse-header:hover .about-me-title-highlight {
+  color: var(--clr-light);
 }
 
 @keyframes slideInRight {
@@ -443,23 +474,13 @@ header {
 }
 
 /* The anti-typing effect */
-@keyframes typing {
-  from {
-    width: 40%;
-  }
-  to {
-    width: 0%;
-  }
-}
-
-/* The anti-typing effect */
 @keyframes typingStill {
   from {
-    top: 0.2em;
+    top: 1.7em;
     right: 2em;
   }
   to {
-    top: 6.8em;
+    top: 8.3em;
     right: -4.8em;
   }
 }
@@ -470,7 +491,7 @@ header {
     width: 0;
   }
   to {
-    width: 40%;
+    width: 13.4em;
   }
 }
 
@@ -487,10 +508,9 @@ header {
 
 .about-me-title-side {
   position: absolute;
-  top: 7em;
+  top: 8.5em;
   right: -5em;
   transform: rotate(90deg);
-  opacity: 80%;
   color: #fff;
   font-weight: 700;
   font-size: 2rem;
@@ -500,19 +520,16 @@ header {
   display: inline;
 }
 
-.about-me-title-highlight {
-  color: var(--clr-accent);
-  font-weight: 700;
-  font-size: 2rem;
-  /* line-height: 49px; */
-  letter-spacing: 0.18538em;
-  display: inline;
+.about-me-p {
+  /* margin-top: 1em; */
+  /* margin-bottom: 4em; */
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: var(--clr-light);
 }
 
-.about-me-p {
-  margin-top: 1em;
-  margin-bottom: 4em;
-  font-size: 1rem;
+.about-me-p + .about-me-p {
+  margin-top: 2em;
 }
 
 @media (min-width: 600px) {
@@ -642,7 +659,7 @@ header {
   /* background-color: var(--clr-dark); */
 
   background-image: url(./img/cat.jpg),
-    linear-gradient(#000 0vw, #8a2521 7vw, #c28830 20vw, #000 50vw, #000 100vw);
+    linear-gradient(#000 0vw, #8a2521 7vw, #c28830 30vw, #000 50vw, #000 100vw);
   /* background-color: #4b4b4b; */
   background-blend-mode: multiply;
   background-size: 100vw;
@@ -650,11 +667,14 @@ header {
   padding-top: 5vh;
   padding-left: 20vw;
   padding-right: 20vw;
+  padding-bottom: 5vh;
 }
 
 .hiring-me-title {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 1em;
   width: fit-content;
   display: block;
   color: var(--clr-light);
@@ -708,13 +728,12 @@ header {
 .project-sub-section:hover {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
   z-index: 100;
-  opacity: 1;
   transform: scale(1.1);
 }
 
 .project-sub-section:hover::before {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-  opacity: 1;
+  opacity: 0.8;
   transform: scale(1.1);
 }
 
@@ -746,19 +765,43 @@ header {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .gtia::before {
   content: '';
   background-image: url(./img/atlantabanner.jpg);
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+.jjz::before {
+  content: '';
+  background-image: url(./img/jjz.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+}
+
+.tedx::before {
+  content: '';
+  background-image: url(./img/tedx.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 .dumpli::before {
@@ -907,7 +950,7 @@ header {
   background: #111;
   color: var(--clr-accent);
   text-align: center;
-  padding: 2.5em 0;
+  padding: 0 0 1.5em 0;
   font-size: var(--fs-h3);
 }
 
@@ -925,6 +968,14 @@ header {
   opacity: 0.7;
 }
 
+.social-list-left {
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  margin: 2em 0 0;
+  padding: 0;
+}
+
 .social-list {
   list-style: none;
   display: flex;
@@ -934,7 +985,7 @@ header {
 }
 
 .social-list__item {
-  margin: 0 0.5em 0;
+  margin: 0 1em 0 1em;
 }
 
 /* Intro Animation */
