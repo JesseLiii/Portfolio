@@ -401,11 +401,7 @@ function App() {
           Let's not be redundant, skim my resume first :)
         </p>
         <div className="center">
-          <a
-            href={require('./components/JesseLiResume.pdf')}
-            className="btn"
-            download
-          >
+          <a href="Jesse_Li_Resume.pdf" className="btn" download>
             Resume
           </a>
         </div>
@@ -420,7 +416,6 @@ function App() {
               animateIn="animate__shakeX"
               delay={1000}
               duration={0.5}
-              animateOnce={true}
               initiallyVisible={true}
             >
               <div className="center">
@@ -456,7 +451,6 @@ function App() {
               animateIn="animate__shakeX"
               delay={1000}
               duration={0.5}
-              animateOnce={true}
               initiallyVisible={true}
             >
               <div className="center">
@@ -615,15 +609,15 @@ function App() {
             </Col>
           </a>
           <a target="_blank" href="https://gtia.gtorg.gatech.edu/">
-            <Col xs={24} className={cs + '1 gtia project-sub-section'}>
+            <Col xs={24} className={cs + '1 hackgt project-sub-section'}>
               <h2 className="about-me-title hiring-me-title project">
-                Hackathon NLP Assistance
+                Hackathon NLP Assistant
               </h2>
               <h3 className="center contact-h3 project">
-                Website subcommittee, creating both the frontend page (click on
-                the banner!) and the internal webapp for tracking work &amp;
-                social points, events, sheets, and membership status using
-                NodeJS, Express, ejs, and MongoDB.
+                NLP Assitant made to help practise and improve oration and
+                interview skills. Gave feedback based on sentiment, diction, and
+                could ask from a bak of common interview questions. Utilising
+                Google Cloud API and hosted on Heroku.
               </h3>
             </Col>
           </a>

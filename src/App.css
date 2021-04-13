@@ -341,9 +341,12 @@ header {
   display: flex;
 }
 
-.intro-img-div:hover .intro-img-1,
+.intro-img-div:hover .intro-img-1 {
+  transform: translateY(5%);
+}
+
 .intro-img-div:hover .intro-img-2 {
-  transform: translateY(0);
+  transform: translateY(-5%);
 }
 
 .intro-img-1 {
@@ -840,6 +843,18 @@ header {
   bottom: 0px;
   left: 0px;
   opacity: 0.5;
+}
+
+.hackgt::before {
+  content: '';
+  background-image: url(./img/hackgt.png);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
 }
 
 .jjz::before {
