@@ -144,15 +144,18 @@ h3 {
 
 .leftNav {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
 
 .mainPage {
   flex: 5;
   background-color: #16e0bd;
+  position: 'relative',
 }
-
-
-
 
 
 /* header */
@@ -167,7 +170,7 @@ header {
   max-width: 100px;
 }
 
-.nav {
+/* .nav {
   position: fixed;
   background: var();
   color: var(--clr-light);
@@ -179,7 +182,7 @@ header {
 
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
-}
+} */
 
 .nav__list {
   list-style: none;
@@ -287,9 +290,17 @@ header {
 
 /* Introduction  */
 .intro-gradient {
-  /* background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1)); */
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
   /* background: linear-gradient( 0deg,var(--color-homepage-dark),var(--color-homepage-light) ); */
   /* background-color: var(--color-homepage-dark); */
+  padding: 5vh 5vw 5vh 5vw;
+  height: 100vh;
+}
+
+.hiring-me {
+  padding: 5vw 5vw 5vw 5vw;
+  margin: 0;
+  min-height: 100vh;
   background-image: linear-gradient(
   0deg,
   hsl(210deg 38% 33%) 0%,
@@ -303,8 +314,6 @@ header {
   hsl(210deg 73% 9%) 79%,
   hsl(211deg 100% 6%) 100%
 );
-  padding: 5vh 5vw 5vh 5vw;
-  height: 60vh;
 }
 
 .intro-gradient-background {
@@ -338,17 +347,6 @@ header {
 .intro-1 {
   background-color: #d7d7d7;
   height: 100vh;
-}
-
-.social-list__link {
-  color: var(--clr-accent);
-  font-size: 2rem;
-}
-
-.social-list__link:hover {
-  color: var(--clr-accent);
-  opacity: 0.7;
-  font-size: 2rem;
 }
 
 .intro-2 {
@@ -391,7 +389,7 @@ header {
 .intro-img-div {
   position: absolute;
   top: 30vh;
-  right: 25vw;
+  right: 7vw;
   display: flex;
 }
 
@@ -413,6 +411,13 @@ header {
   transition: transform 0.3s ease-out;
 }
 
+.intro-arrow {
+  position: absolute;
+  height: 15vh;
+  /* bottom: 10vh; */
+  margin-left: -3vw;
+}
+
 .intro-text {
   padding-top: 30vh;
   padding-left: 10vw;
@@ -421,11 +426,11 @@ header {
 .intro-h1 {
   color: #fff;
   position: absolute;
-  bottom: 15vh;
-  left: 5vw;
   font-weight: bold;
   font-size: 3em;
   margin-bottom: 0.3em;
+  top: 40vh;
+  left: 21vw;
 }
 
 .intro-h3 {
@@ -434,13 +439,23 @@ header {
   margin-bottom: 0.75em;
 }
 
+.intro-h4-div {
+  position: absolute;
+  top: 50vh;
+  left: 21vw;
+  width: 40%;
+}
+
 .intro-h4 {
   color: #fff;
   font-weight: bold;
   font-size: 1em;
-  position: absolute;
-  bottom: 10vh;
-  left: 5vw;
+}
+
+.intro-h4-2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 .intro {
@@ -514,9 +529,9 @@ header {
 .about-me {
   padding: 5vw 5vw 5vw 5vw;
   margin: 0;
-  /* background-image: url(./img/miami1.jpg),
-    linear-gradient(rgba(43, 55, 96, 1) 0%, #f304ab 10%, #b6302b 80%, #000 100%); */
-    background-image: linear-gradient(
+  background-image: url(./img/miami1.jpg),
+    linear-gradient(rgba(43, 55, 96, 1) 0%, #f304ab 10%, #b6302b 80%, #000 100%);
+    /* background-image: linear-gradient(
       0deg,
       hsl(210deg 38% 33%) 0%,
       hsl(211deg 40% 30%) 21%,
@@ -528,10 +543,11 @@ header {
       hsl(210deg 62% 12%) 69%,
       hsl(210deg 73% 9%) 79%,
       hsl(211deg 100% 6%) 100%
-    );
+    ); */
   background-blend-mode: multiply;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
+  min-height: 100vh;
 }
 
 .ant-collapse-item {
@@ -780,22 +796,6 @@ header {
   transition: fransform 200ms ease-in-out;
   text-decoration: none;
 } */
-
-/* Hiring me */
-.hiring-me {
-  /* background-color: var(--clr-dark); */
-
-  background-image: url(./img/cat.jpg),
-    linear-gradient(#000 0vw, #8a2521 7vw, #c28830 30vw, #000 50vw, #000 100vw);
-  /* background-color: #4b4b4b; */
-  background-blend-mode: multiply;
-  background-size: 100vw;
-
-  padding-top: 5vh;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  padding-bottom: 5vh;
-}
 
 .hiring-me-title {
   margin-left: auto;
@@ -1107,10 +1107,11 @@ header {
   opacity: 0.7;
 }
 
-.social-list-left {
+
+/* .social-list-left {
   list-style: none;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   margin: 2em 0 0;
   padding: 0;
 }
@@ -1125,6 +1126,6 @@ header {
 
 .social-list__item {
   margin: 0 1em 0 1em;
-}
+} */
 
 /* Intro Animation */

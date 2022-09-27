@@ -1,38 +1,7 @@
 .bg{
-    background: #a0d8ef;
-    /* height: 100vh; */
-    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* margin: -8px; */
-  }
-  
-  .book1{
-    position: relative;
-    height:30px;
-    width:140px;
-    border: 5px solid #942343;
-    /* margin-left:42vw; */
-    border-radius: 10px 0 0 10px;
-    border-right-style: none;
-    background: #fffff0;  
-  }
-  
-  .bookCut{ 
-    background: #a0d8ef;
-    margin: 0 0 0 97%;
-    width: 5px;
-    height: 30px;
-  }
-  
-  .ribbon1{
-    height:25px;
-    width:20px;
-    background: #ff785b;
-    position: absolute;
-    margin: 12px 0 0 10px;
   }
   
   .book2{
@@ -41,30 +10,14 @@
     width:120px;
     /* margin-left:43vw; */
     background: #a688bd;  
+    transition: transform ease 300ms;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
   
-  .ribbonCut1{
-    position: absolute;
-    margin: 5px 0 0 2px;
-    border-left: 0px solid #ff785b;
-      border-right: 10px solid transparent;
-      border-top: 12px solid #ff785b;
-  }
-  
-  .ribbonCut2{
-    position: absolute;
-    margin: 5px 0 0 12px;
-    border-left: 10px solid transparent;
-      border-right: 0px solid #ff785b;
-      border-top: 12px solid #ff785b;
-  }
-  
-  .ribbonCut3{
-    position: absolute;
-    margin: 0 0 0 2px;
-    height: 5px;
-    width: 20px;
-    background: #ff785b;
+  .book2:hover {
+    transform: translate(20px, 0);
   }
   
   .book2:before,
@@ -72,21 +25,39 @@
     content: "";
     position: absolute;
   }
+
+  /* Typography */
+  .book-title {
+    align-self: center;
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: small;
+  }
+
+
+  .bookCut{ 
+    background: #a0d8ef;
+    margin: 0 0 0 97%;
+    width: 5px;
+    height: 30px;
+  }
   
-  .book2:before{
+  
+  /* .book2:before{
     height: 40px;
     width: 60px;
     left: 10px;
     border-left: 20px double #fff;
     border-right: 20px double #fff;
   }
-  
-  .book2:after{
+   */
+  /* .book2:after{
     background: white;
     margin: 5% 0 0 39%;
     width: 30px;
     height: 20px;
-  }
+  } */
   
   .book3{
     position: relative;
@@ -104,14 +75,6 @@
     background: #a0d8ef;
     width: 5px;
     height: 30px;
-  }
-  
-  .ribbon3{
-    height:25px;
-    width:20px;
-    position: absolute;
-    background: #a4d5bd;
-    margin: 10px 0 0 100px;
   }
   
   .book4{
@@ -142,31 +105,7 @@
     width: 40px;
     height: 20px;
   }
-  
-  .ribbonCut4{
-    position: absolute;
-    margin: 5px 0 0 127px;
-    border-left: 0px solid #a4d5bd;
-      border-right: 10px solid transparent;
-      border-top: 12px solid #a4d5bd;
-  }
-  
-  .ribbonCut5{
-    position: absolute;
-    margin: 5px 0 0 137px;
-    border-left: 10px solid transparent;
-      border-right: 0px solid #a4d5bd;
-      border-top: 12px solid #a4d5bd;
-  }
-  
-  .ribbonCut6{
-    position: absolute;
-    margin: 0 0 0 127px;
-    height: 5px;
-    width: 20px;
-    background: #a4d5bd;
-  }
-  
+
   .book5{
     position: relative;
     height:40px;
@@ -215,14 +154,6 @@
     height: 30px;
   }
   
-  .ribbon6{
-    height:25px;
-    width:20px;
-    position: absolute;
-    background: #a4d5bd;
-    margin: 14px 0 0 105px;
-  }
-  
   .book7{
     position: relative;
     height:40px;
@@ -251,28 +182,4 @@
     width: 22px;
     height: 22px;
     border-radius: 12px;
-  }
-  
-  .ribbonCut7{
-    position: absolute;
-    margin: 5px 0 0 125px;
-    border-left: 0px solid #a4d5bd;
-      border-right: 10px solid transparent;
-      border-top: 12px solid #a4d5bd;
-  }
-  
-  .ribbonCut8{
-    position: absolute;
-    margin: 5px 0 0 135px;
-    border-left: 10px solid transparent;
-      border-right: 0px solid #a4d5bd;
-      border-top: 12px solid #a4d5bd;
-  }
-  
-  .ribbonCut9{
-    position: absolute;
-    margin: 0 0 0 125px;
-    height: 5px;
-    width: 20px;
-    background: #a4d5bd;
   }
