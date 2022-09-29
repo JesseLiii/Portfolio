@@ -294,7 +294,10 @@ header {
 
 /* Introduction  */
 .intro-gradient {
-  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+  /* background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1)); */
+  background: rgba(0, 0, 0, 0.7) url(./img/pixel-background-4.png);
+  background-blend-mode: darken;
+  background-size: cover;
   /* background: linear-gradient( 0deg,var(--color-homepage-dark),var(--color-homepage-light) ); */
   /* background-color: var(--color-homepage-dark); */
   padding: 5vh 5vw 5vh 5vw;
@@ -537,8 +540,8 @@ header {
 .about-me {
   padding: 5vw 5vw 5vw 5vw;
   margin: 0;
-  background-image: url(./img/miami1.jpg),
-    linear-gradient(rgba(43, 55, 96, 1) 0%, #f304ab 10%, #b6302b 80%, #000 100%);
+  background: rgba(0, 0, 0, 0.4) url(./img/pixel-background-2.png);
+    /* linear-gradient(rgba(43, 55, 96, 1) 0%, #df59b7 10%, #b6302b 32%, rgb(29, 29, 29) 100%); */
     /* background-image: linear-gradient(
       0deg,
       hsl(210deg 38% 33%) 0%,
@@ -737,15 +740,6 @@ header {
 
 /* My Services Section */
 
-.my-services {
-  background-color: var(--clr-light);
-  background-image: url(./img/services-bg.jpg);
-  background-size: cover;
-  /* background-blend-mode: multiply; */
-  color: var(--clr-light);
-  text-align: center;
-}
-
 .section__title--services {
   color: var(--clr-accent);
   position: relative;
@@ -879,102 +873,6 @@ header {
   margin-top: 3rem;
   text-align: center;
   max-width: 70%;
-}
-
-.gtia::before {
-  content: '';
-  background-image: url(./img/atlantabanner.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.hackgt::before {
-  content: '';
-  background-image: url(./img/hackgt.png);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.3;
-}
-
-.jjz::before {
-  content: '';
-  background-image: url(./img/jjz.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.6;
-}
-
-.tedx::before {
-  content: '';
-  background-image: url(./img/tedx.png);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.dumpli::before {
-  content: '';
-  background-image: url(./img/dumpli.png);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.7;
-}
-
-.phan-group::before {
-  content: '';
-  background-image: url(./img/phan-group.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.7;
-}
-
-.creativity::before {
-  content: '';
-  background-image: url(./img/creativity.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.colours::before {
-  content: '';
-  background-image: url(./img/lisbonBanner.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
 }
 
 .project {
