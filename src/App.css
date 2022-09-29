@@ -881,30 +881,6 @@ header {
   max-width: 70%;
 }
 
-.cssocialgood::before {
-  content: '';
-  background-image: url(./img/cssocialgood.png);
-  background-size: contain;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.ic::before {
-  content: '';
-  background-image: url(./img/ICbackground.jpg);
-  background-size: contain;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
 .gtia::before {
   content: '';
   background-image: url(./img/atlantabanner.jpg);
