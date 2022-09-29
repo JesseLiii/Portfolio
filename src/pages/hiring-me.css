@@ -1,0 +1,108 @@
+.toolbox-div {
+    flex: 3;
+    text-align: left;
+}
+
+.toolbox {
+    text-align: left;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.weapons-display {
+    display: flex;
+    flex-direction: row;
+}
+
+.character-div {
+    flex: 2;
+    text-align: center;
+    position: relative;
+}
+
+.toolbox-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 0.2em 0 0.2em 0;
+    /* line-height: 49px; */
+    letter-spacing: 0.15538em;
+    display: inline;
+    text-transform: uppercase;
+  }
+
+  .floating-p {
+    margin-top: 20px;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+    /* mix-blend-mode: multiply; */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: #774f38;
+    background-color:  #ece5ce;
+    padding: 50px;
+    border-radius: 11px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 20px 20px #cbc5b1;
+    /* font-family: "Baloo 2", cursive; */
+    border: 1px solid #c8c8a9;
+  }
+
+  .floating-p:after {
+    margin-top: 10px;
+    transform: translatey(0px);
+    animation: float2 5s ease-in-out infinite;
+    content: ".";
+    font-weight: bold;
+    /* // -webkit-text-stroke: 0.5px #c8c8a9; */
+    -webkit-text-fill-color:  #ece5ce;
+    border: 1px solid #c8c8a9;
+    text-align: left;
+    font-size: 55px;
+    width: 55px;
+    height: 11px;
+    line-height: 30px;
+    border-radius: 11px;
+    background-color:  #ece5ce;
+    opacity: 100%;
+    position: absolute;
+    display: block;
+    bottom: -30px;
+    left: 0;
+    /* z-index: 1; */
+    animation: float2 5s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float2 {
+    0% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+    55% {
+      transform: translatey(-20px);
+    }
+    60% {
+      line-height: 10px;
+    }
+    100% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+  }
+  

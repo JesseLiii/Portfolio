@@ -149,6 +149,10 @@ h3 {
   justify-content: space-between;
   padding-bottom: 5vh;
   padding-top: 5vh;
+  background: rgba(0, 0, 0, 0.2) url(./assets/wood.png);
+  background-repeat: repeat;
+  background-blend-mode: darken;
+  border-right: 5px solid #361805;;
 }
 
 .mainPage {
@@ -297,11 +301,17 @@ header {
   height: 100vh;
 }
 
-.hiring-me {
+.hiring-me{
   padding: 5vw 5vw 5vw 5vw;
   margin: 0;
   min-height: 100vh;
-  background-image: linear-gradient(
+  background: rgba(0, 0, 0, 0.7) url(./img/pixel-background.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* background-color: #fff; */
+  /* background-image: linear-gradient(
   0deg,
   hsl(210deg 38% 33%) 0%,
   hsl(211deg 40% 30%) 21%,
@@ -313,7 +323,7 @@ header {
   hsl(210deg 62% 12%) 69%,
   hsl(210deg 73% 9%) 79%,
   hsl(211deg 100% 6%) 100%
-);
+); */
 }
 
 .intro-gradient-background {
@@ -340,9 +350,6 @@ header {
   left: 0;
 }
 
-.layer1 {
-  background-image: url('./assets/layered-waves.svg');
-}
 
 .intro-1 {
   background-color: #d7d7d7;
@@ -391,6 +398,7 @@ header {
   top: 30vh;
   right: 7vw;
   display: flex;
+  animation: float2 5s ease-in-out infinite;
 }
 
 .intro-img-div:hover .intro-img-1 {
@@ -429,7 +437,7 @@ header {
   font-weight: bold;
   font-size: 3em;
   margin-bottom: 0.3em;
-  top: 40vh;
+  top: 35vh;
   left: 21vw;
 }
 
@@ -441,7 +449,7 @@ header {
 
 .intro-h4-div {
   position: absolute;
-  top: 50vh;
+  top: 45vh;
   left: 21vw;
   width: 40%;
 }
@@ -567,7 +575,7 @@ header {
   color: #fff;
   font-weight: 700;
   font-size: 1.5rem;
-  margin: 0.2em 0 0.2em 0;
+  margin: 0.2em 0.2em 0.2em 0.2em;
   /* line-height: 49px; */
   letter-spacing: 0.15538em;
   display: inline;
@@ -603,6 +611,8 @@ header {
 .about-me-col-side {
   position: relative;
   float: right;
+  justify-content: center;
+  align-items: center;
 }
 
 .typewriter h2 {
@@ -720,7 +730,7 @@ header {
 }
 
 .btn {
-  margin: 10px auto;
+  margin: auto;
 }
 
 /* Responsiveness in Service section */
@@ -1129,3 +1139,33 @@ header {
 } */
 
 /* Intro Animation */
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float2 {
+    0% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+    55% {
+      transform: translatey(-20px);
+    }
+    60% {
+      line-height: 10px;
+    }
+    100% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+  }
+  

@@ -4,8 +4,6 @@ import './App.css';
 
 import 'animate.css/animate.min.css';
 
-import jerry1 from './img/jerry1.jpg';
-import jerry2 from './img/jerry2.jpg';
 import Book from './components/book/book';
 import TV from './components/tv/tv';
 import BlankBook from './components/book/BlankBook';

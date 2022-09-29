@@ -1,7 +1,42 @@
 .experience-block {
-  background-color: #FFF;
-  border-radius: 20;
-  border: 1px solid #242424;
+  background-color: #f2d28c;
+  border-radius: 5px;
+  border: 5px solid #361805;
+  padding: 1%;
   width: 90%;
-  color: #242424;
+  background: rgba(0, 0, 0, 0.5) url(../../assets/wood.png);
+  background-repeat: repeat;
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.description-section {
+  justify-content: start;
+  text-align: left;
+  padding-top: 5%;
+}
+
+.button {
+  width: 50 !important; 
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  /* background: rgb(251, 255, 0); */
+  /* border-radius: 100px; */
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  background-image: radial-gradient(rgb(228, 236, 1) , rgba(11, 16, 35, 0) 70%);
+  cursor: pointer;
+  /* box-shadow: 0 5px 15px rgba(145, 92, 182, .4); */
 }

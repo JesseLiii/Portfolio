@@ -1,16 +1,19 @@
 import React, { Component, useState } from 'react';
 import './experience.css';
 
-const Experience = ({ title, text }) => {
-	const style = {};
+const Experience = ({ image, onClick }) => {
+	const style = {
+		height: 80,
+		marginRight: 5,
+	};
 
 	return (
-		<div style={{ ...style }} class='experience-block'>
-			<h2 style={{ color: '#242424' }} className='about-me-title'>
-				{title}
-			</h2>
-			<div>{text}</div>
-		</div>
+		<img
+			style={style}
+			src={image}
+			onClick={onClick}
+			className='button glow-button'
+		/>
 	);
 };
 
