@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3a4a2297.chunk.css",
+    "main.js": "/static/js/main.5621e1fc.chunk.js",
+    "main.js.map": "/static/js/main.5621e1fc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9f33c190.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9f33c190.js.map",
+    "static/css/2.b919af72.chunk.css": "/static/css/2.b919af72.chunk.css",
+    "static/js/2.75c268de.chunk.js": "/static/js/2.75c268de.chunk.js",
+    "static/js/2.75c268de.chunk.js.map": "/static/js/2.75c268de.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.b919af72.chunk.css.map": "/static/css/2.b919af72.chunk.css.map",
+    "static/css/main.3a4a2297.chunk.css.map": "/static/css/main.3a4a2297.chunk.css.map",
+    "static/js/2.75c268de.chunk.js.LICENSE.txt": "/static/js/2.75c268de.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/wood.043c554a.png",
+    "static/media/Sammy.074eee9d.png": "/static/media/Sammy.074eee9d.png",
+    "static/media/arrow.91e49823.png": "/static/media/arrow.91e49823.png",
+    "static/media/jerry1.e1a140e5.jpg": "/static/media/jerry1.e1a140e5.jpg",
+    "static/media/jerry2.30ed58e2.jpg": "/static/media/jerry2.30ed58e2.jpg",
+    "static/media/potion1.10d484a2.png": "/static/media/potion1.10d484a2.png",
+    "static/media/potion2.e923db93.png": "/static/media/potion2.e923db93.png",
+    "static/media/potion3.9d506426.png": "/static/media/potion3.9d506426.png",
+    "static/media/potion4.b73646fd.png": "/static/media/potion4.b73646fd.png",
+    "static/media/potion5.c5e920b3.png": "/static/media/potion5.c5e920b3.png",
+    "static/media/shield1.eb6cf9d7.png": "/static/media/shield1.eb6cf9d7.png",
+    "static/media/shield2.304c013c.png": "/static/media/shield2.304c013c.png",
+    "static/media/shield3.1426a2d9.png": "/static/media/shield3.1426a2d9.png",
+    "static/media/shield4.3fbb2866.png": "/static/media/shield4.3fbb2866.png",
+    "static/media/shield5.956bc24c.png": "/static/media/shield5.956bc24c.png",
+    "static/media/weapon1.286628bf.png": "/static/media/weapon1.286628bf.png",
+    "static/media/weapon2.cc416141.png": "/static/media/weapon2.cc416141.png",
+    "static/media/weapon3.aacee653.png": "/static/media/weapon3.aacee653.png",
+    "static/media/weapon4.13e1bf0f.png": "/static/media/weapon4.13e1bf0f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f33c190.js",
+    "static/css/2.b919af72.chunk.css",
+    "static/js/2.75c268de.chunk.js",
+    "static/css/main.3a4a2297.chunk.css",
+    "static/js/main.5621e1fc.chunk.js"
+  ]
+}
