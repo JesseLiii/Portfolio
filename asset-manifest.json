@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8b04c915.chunk.css",
+    "main.css": "/Portfolio/static/css/main.3f3216cf.chunk.css",
     "main.js": "/Portfolio/static/js/main.554e7165.chunk.js",
     "main.js.map": "/Portfolio/static/js/main.554e7165.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.24ef1c84.js",
@@ -10,11 +10,11 @@
     "static/js/2.75c268de.chunk.js.map": "/Portfolio/static/js/2.75c268de.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.b919af72.chunk.css.map": "/Portfolio/static/css/2.b919af72.chunk.css.map",
-    "static/css/main.8b04c915.chunk.css.map": "/Portfolio/static/css/main.8b04c915.chunk.css.map",
+    "static/css/main.3f3216cf.chunk.css.map": "/Portfolio/static/css/main.3f3216cf.chunk.css.map",
     "static/js/2.75c268de.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.75c268de.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Portfolio/static/media/wood.043c554a.png",
     "static/media/Sammy.074eee9d.png": "/Portfolio/static/media/Sammy.074eee9d.png",
     "static/media/arrow.91e49823.png": "/Portfolio/static/media/arrow.91e49823.png",
+    "static/media/App.css": "/Portfolio/static/media/wood.043c554a.png",
     "static/media/jerry1.e1a140e5.jpg": "/Portfolio/static/media/jerry1.e1a140e5.jpg",
     "static/media/jerry2.30ed58e2.jpg": "/Portfolio/static/media/jerry2.30ed58e2.jpg",
     "static/media/potion1.10d484a2.png": "/Portfolio/static/media/potion1.10d484a2.png",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.24ef1c84.js",
     "static/css/2.b919af72.chunk.css",
     "static/js/2.75c268de.chunk.js",
-    "static/css/main.8b04c915.chunk.css",
+    "static/css/main.3f3216cf.chunk.css",
     "static/js/main.554e7165.chunk.js"
   ]
 }
