@@ -182,33 +182,6 @@ const HiringMe = () => {
 			],
 		},
 		{
-			title: 'Dagger of Writing',
-			text: (
-				<>
-					<p>
-						They say the pen is mightier than the sword. Well, what
-						do they say about the dagger of writing?
-					</p>
-					<p>
-						In my newest chapter of actively growing, and squeezing
-						the most out of my experiences, I have combined my joy
-						of writing along with the lessons in Productivity,
-						Product, and Professional lessons I've learnt.
-					</p>
-					<p>
-						I publish these lessons on my Medium blog, so they may
-						help someone like they help me.
-					</p>
-				</>
-			),
-			image: weapon5,
-			stats: [
-				'+10 Nerding Out',
-				'+10 Absorbing Experience',
-				'+10 Finding Passion',
-			],
-		},
-		{
 			title: 'GTIAxe of Website Team',
 			text: (
 				<>
@@ -252,6 +225,33 @@ const HiringMe = () => {
 			stats: [
 				'+10 Machine Learning',
 				'+10 Writing Research',
+				'+10 Finding Passion',
+			],
+		},
+		{
+			title: 'Dagger of Writing',
+			text: (
+				<>
+					<p>
+						They say the pen is mightier than the sword. Well, what
+						do they say about the dagger of writing?
+					</p>
+					<p>
+						In my newest chapter of actively growing, and squeezing
+						the most out of my experiences, I have combined my joy
+						of writing along with the lessons in Productivity,
+						Product, and Professional lessons I've learnt.
+					</p>
+					<p>
+						I publish these lessons on my Medium blog, so they may
+						help someone like they help me.
+					</p>
+				</>
+			),
+			image: weapon5,
+			stats: [
+				'+10 Nerding Out',
+				'+10 Absorbing Experience',
 				'+10 Finding Passion',
 			],
 		},
@@ -436,7 +436,9 @@ const HiringMe = () => {
 				}}
 			>
 				<div className='toolbox-div'>
-					<h2 className='about-me-title'>My Toolbox</h2>
+					<h2 className='about-me-title'>
+						My Toolbox (Click Items Below!)
+					</h2>
 					<div className='toolbox'>
 						<h2 className='toolbox-title'>
 							Potions of Communication
@@ -492,6 +494,12 @@ const HiringMe = () => {
 								}}
 							></Experience>
 							<Experience
+								image={weapon5}
+								onClick={() => {
+									changeShowCard(pass[4]);
+								}}
+							></Experience>
+							<Experience
 								image={weapon3}
 								onClick={() => {
 									changeShowCard(pass[2]);
@@ -501,12 +509,6 @@ const HiringMe = () => {
 								image={weapon4}
 								onClick={() => {
 									changeShowCard(pass[3]);
-								}}
-							></Experience>
-							<Experience
-								image={weapon5}
-								onClick={() => {
-									changeShowCard(pass[4]);
 								}}
 							></Experience>
 						</div>
